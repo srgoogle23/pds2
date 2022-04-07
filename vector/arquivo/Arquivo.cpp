@@ -10,12 +10,23 @@ class Arquivo
 		std::string _filename;
 		std::vector<std::string> _words;
 	public:
+
+		/**
+		 * @brief Construtor padrão do objeto Arquivo
+		 *
+		 * @param filename 
+		 */
 		Arquivo(std::string filename)
 		{
 			_filename = filename;
 			this->read();
 		}
 
+		/**
+		 * @brief Método que lê o arquivo e armazena as palavras em um vetor
+		 *
+		 * @return void
+		 */
 		void read()
 		{
 			std::ifstream file(_filename);
@@ -26,6 +37,11 @@ class Arquivo
 			}
 		}
 
+		/**
+		 * @brief Método que imprime todas palavras do vetor
+		 * 
+		 * @return void
+		 */
 		void print()
 		{
 			for(auto word : _words)
@@ -34,6 +50,11 @@ class Arquivo
 			}
 		}
 
+		/**
+		 * @brief Método que remove todas as palavras duplicadas do vetor
+		 * 
+		 * @return void
+		 */
 		void removeDuplicates()
 		{
 			std::sort( _words.begin(), _words.end() ); // ordena o vetor, do inicio ao fim, em ordem crescente
