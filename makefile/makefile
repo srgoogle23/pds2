@@ -1,6 +1,8 @@
+#example
+
 CC = g++
 CFLAGS  = -g -Wall
-TARGET = complexo
+TARGET = main
 
 all: $(TARGET)
 

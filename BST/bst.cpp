@@ -1,14 +1,3 @@
-/**
- * @file bst.cpp
- * @author Leonardo Oliveira (contato@leonardoliveira.com)
- * @brief Implementação de arvore binária de busca (BST) com exemplicações de valores e testes.
- * @version 0.1
- * @date 2022-04-13
- * 
- * @copyright Copyright (c) 2022
- * 
- */
-
 #include <iostream>
 using namespace std;
  
